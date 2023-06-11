@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto,sans-serif";
+}
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+li{
+  list-style: none;
+}
+html{
+  font-size: 62.5%;
+}
+:root{
+  --color-blue:blue;
+  --color-heading:#1f2328;
+  --color-heading2:#24292f;
+  --color-dark:darkslateblue;
+  --color-dark-text:white;
+  --color-dark-text-2:green;
+  --color-green:#1a7f37;
+  --color-blue2:#0969da;
+  --color-header:#1F2328;
+  --color-main:#282c34;
+  --color-trending-bg:#f5f5f5;
+  --color-trending-back:#f6f8fa;
+  --color-trending-border:rgb(229 231 235);
+}
+
+.App {
+  
+  text-align: center;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
