@@ -8,6 +8,7 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { repoData } from "../redux/repoSlide";
+import Details from "./Details";
 
 const RepoBox = ({ id, name, desc }) => {
   /* const[reposName,setReposName]=useState({}) */
@@ -66,24 +67,8 @@ const RepoBox = ({ id, name, desc }) => {
             {desc}
           </p>
           
-         <div className="flex items-center my-2">
-              <ul className="flex items-center sm:gap-4 lg-gap-6 justify-between">
-                <li className="flex items-center lg-gap-2">
-                  
-                  <p className="w-[15px] h-[15px] rounded-full bg-blue-600"></p>
-                  <p className="sm:text-[13px] font-sans">Python</p>
-                </li>
-                <li className="flex items-center  lg:gap-2">
-                  <AiOutlineStar className="sm:text-[20px]" />
-                  <p className="lg:text-[13px] font-sans">Watch count</p>
-                </li>
-                <li className="flex items-center lg-gap-2">
-                 
-                  <VscTypeHierarchySuper className="sm:text-[16px]" />
-                  <p className="sm:text-[13px] font-sans">fork</p>
-                </li>
-              </ul>
-            </div>
+     {/* details section */}
+     <Details/>
         </div>
         <div className="">
           <ul className="flex flex-col justify-between gap-12">

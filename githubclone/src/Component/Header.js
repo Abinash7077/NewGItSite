@@ -5,8 +5,13 @@ import { MdOutlineNightlight } from "react-icons/md";
 import { RxTriangleDown } from "react-icons/rx";
 import { useDispatch } from "react-redux";
 import { darkLight } from "../redux/darkSlide";
+import { useSelector } from "react-redux";
+
 
 const Header = () => {
+  const gitDatas=useSelector((state)=>state.GitName)
+  console.log("git",gitDatas.gitName)
+
   const [show, setShow] = useState(false);
   const dispatch=useDispatch()
   useEffect(()=>{
@@ -27,6 +32,7 @@ const Header = () => {
             className="w-[27px] h-[27px] rounded-full"
             alt=""
           />
+          <p className="text-white text-[16px]">{gitDatas.gitName}</p>
           <RxTriangleDown className="text-white text-[28px]" />
         </div>
 

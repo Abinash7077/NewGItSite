@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Main from "./Page/Main";
-import Login from "./Page/Login";
+/* import Login from "./Page/Login"; */
 import Authe from "./Page/Authe";
 import Reponame from "./Page/Reponame";
 import { useSelector } from "react-redux";
@@ -14,7 +14,7 @@ function App() {
       
         <Routes>
         <Route exact path="/" element={<Authe />}></Route>
-          <Route exact path="/Login" element={<Login />}></Route>
+          {/* <Route exact path="/Login" element={<Login />}></Route> */}
           <Route path="/Repo" element={<Main/>}>
          
           </Route>
