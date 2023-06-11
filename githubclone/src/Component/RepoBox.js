@@ -10,14 +10,14 @@ import { useDispatch } from "react-redux";
 import { repoData } from "../redux/repoSlide";
 
 const RepoBox = ({ id, name, desc }) => {
-  const[reposName,setReposName]=useState({})
+  /* const[reposName,setReposName]=useState({}) */
   const theme = useSelector((state) => state.darker);
   const dispatch = useDispatch();
   const repoName = useSelector((state) => state.reposData);
  
 
 
-  const fetchName = () => {
+ /*  const fetchName = () => {
     axios.get(`https://api.github.com/repos/${repoName.repos}`)
     .then((response) => {
       setReposName(response.data);
@@ -26,7 +26,7 @@ const RepoBox = ({ id, name, desc }) => {
   useEffect(() => {
     fetchName();
   }, []);
-  console.log(reposName.language)
+  console.log(reposName.language) */
   //name dispatch and nagivate to repo name
 
   const navigate = useNavigate();
@@ -97,7 +97,7 @@ const RepoBox = ({ id, name, desc }) => {
             <li className="flex items-center">
               <AiOutlineStar className="sm:text-[20px] text:[16px]" />
               <p className=" text-[14px] sm:text-[16px]">
-                {reposName.stargazers_count}<span className="text-[14px]">stars today</span>
+                <span className="text-[14px]">stars today</span>
               </p>
             </li>
           </ul>
