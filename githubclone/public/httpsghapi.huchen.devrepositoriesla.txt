@@ -1,0 +1,10 @@
+https://ghapi.huchen.dev/repositories?language=&since=daily&spoken_language_code=
+
+  https://api.github.com/search/repositories?q=Q
+
+https://api.github.com/repositories
+
+
+(state=[],action)=>{
+            state.repos=[...state.repos,{...action.payload}]
+            console.log("repos-",action.payload)
