@@ -39,7 +39,7 @@ const RepoBox = ({ id, name, desc }) => {
         repos: name,
       })
     );
-    navigate("/Repo/Reponame")
+    navigate("/repos/repo-name")
   };
   console.log();
 
