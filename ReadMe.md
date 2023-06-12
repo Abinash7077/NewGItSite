@@ -56,7 +56,12 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd NewGitSIte
+```
+* For fronend change directory NewGitSIte to githubclone
+```bash
+  cd githubclone
+
 ```
 
 Install dependencies
@@ -65,9 +70,22 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the frontend  server
 
 ```bash
   npm run start
+```
+Split the terminal to start the backend
+
+* For backend change directory githubclone to cloneback
+```bash
+  cd..
+  cd cloneback
+
+```
+Start  the backend server
+
+```bash
+  nodemon index.js
 ```
 
